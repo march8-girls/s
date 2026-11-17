@@ -1,0 +1,253 @@
+<!doctype html>
+<!-- V3 -->
+<!-- NO_PALETTE -->
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ансар & Аяулым</title>
+  <style>
+    @font-face{font-family:'Asylbek Shelley';font-display:swap;src:url('asylbek-shelley.woff2') format('woff2')}
+    @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('cormorant-normal-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
+    @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('cormorant-normal-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+    @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('cormorant-normal-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+    @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('cormorant-normal-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('cormorant-italic-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
+    @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('cormorant-italic-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+    @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('cormorant-italic-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+    @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('cormorant-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('dmmono-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+    @font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('dmmono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+    :root{
+      --bg-solid:#fff;
+      --bg:radial-gradient(circle at 4px 9px,rgba(77,77,77,.105) 0 .75px,transparent .9px) 0 0/48px 48px,#fff;
+      --bg-alt:#f1f2e8;
+      --ink:#38402a;
+      --ink-soft:#525c3b;
+      --ink-mute:#8b9070;
+      --rule:#d6d9c2;
+      --accent:#5f6b3c;
+      --primary:#5f6b3c;
+      --primary-ink:#fbfaf4;
+      --font-display:'Asylbek Shelley','Cormorant Garamond',serif;
+      --font-body:'Cormorant Garamond',Georgia,serif;
+      --font-mono:'DM Mono',monospace;
+      --type-scale:1.4;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;background:#f1ece2}
+    body{min-height:100vh;background:#f1ece2;color:var(--ink);font-family:var(--font-body);display:flex;justify-content:center}
+    .page{width:100%;max-width:430px;min-height:100vh;overflow:hidden;background:var(--bg);box-shadow:0 0 60px rgba(42,37,32,.18)}
+    .paper{background:var(--bg)}
+
+    .hero{position:relative;width:100%;height:min(850px,calc(100dvh + 6px));min-height:740px;overflow:hidden;background:var(--bg);}
+    .hero-image{width:100%;height:100%;object-fit:cover;display:block}
+    .hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0 18px 14%;text-align:center}
+    .hero-names{width:100%;display:flex;align-items:baseline;justify-content:center;gap:7px;white-space:nowrap;color:#f6f4e8;text-shadow:0 3px 20px rgba(40,46,28,.45);font-family:var(--font-display);font-style:italic;line-height:.95}
+    .hero-name{position:relative;font-size:clamp(44px,14vw,56px)}
+    .hero-amp{font-size:calc(var(--type-scale)*18px);opacity:.9}
+    .hero-date{margin-top:14px;font-family:var(--font-mono);font-size:calc(var(--type-scale)*12px);letter-spacing:.36em;text-indent:.36em;color:#f6f4e8;text-shadow:0 2px 14px rgba(40,46,28,.5)}
+
+    .countdown-section{position:relative;padding:48px 24px 30px;text-align:center;background:var(--bg)}
+    .countdown-title{font-family:var(--font-display);font-size:calc(var(--type-scale)*22px);letter-spacing:.32em;color:var(--ink);margin-bottom:22px}
+    .count-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+    .count-num{font-family:var(--font-display);font-size:calc(var(--type-scale)*44px);line-height:1;color:var(--ink)}
+    .count-lbl{font-family:var(--font-body);font-size:calc(var(--type-scale)*12px);color:var(--ink-mute);margin-top:6px;font-style:italic}
+    .countdown-note{margin-top:22px;font-family:var(--font-body);font-style:italic;font-size:calc(var(--type-scale)*14px);color:var(--ink-soft);line-height:1.6;white-space:pre-line}
+    .hosts{text-align:center;margin-top:56px}
+    .hosts-label,.hosts-name{font-family:var(--font-display);font-size:calc(var(--type-scale)*23px);letter-spacing:.18em;color:var(--ink)}
+    .hosts-name{margin-top:4px}
+    .hosts-note{margin-top:14px;font-family:var(--font-body);font-style:italic;font-size:calc(var(--type-scale)*14px);color:var(--ink-soft)}
+
+    .rsvp-wrap{margin:40px auto 0;max-width:380px;padding:8px 0;background:transparent;border:1px solid transparent;border-radius:4px}
+    .rsvp-form{max-width:320px;margin:0 auto;text-align:left;font-family:var(--font-body)}
+    .rsvp-title{text-align:center;margin-bottom:22px;font-family:var(--font-display);font-size:calc(var(--type-scale)*48px);font-weight:400;line-height:1.15;color:var(--ink)}
+    .field-label,.attend-label{font-family:var(--font-body);font-style:italic;font-size:calc(var(--type-scale)*22px);color:var(--ink)}
+    .field-label{display:block;margin-bottom:4px}
+    .attend-label{margin:20px 0 10px}
+    .rsvp-input{width:100%;padding:12px 18px;margin-bottom:4px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font-family:var(--font-body);font-size:calc(var(--type-scale)*20px);outline:none;border-radius:999px}
+    .rsvp-input::placeholder{color:var(--ink-mute);opacity:.65}
+    .phone-field,.note-wrap{display:none!important}
+    .attend-list{display:flex;flex-direction:column;gap:8px}
+    .attend-opt{position:relative;display:flex;align-items:center;gap:12px;width:100%;padding:7px 2px;border:0;background:transparent;color:var(--ink);font-family:var(--font-body);font-style:italic;font-size:calc(var(--type-scale)*22px);cursor:pointer;text-align:left;opacity:.75}
+    .attend-opt:has(input:checked){opacity:1}
+    .attend-opt input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+    .attend-dot{width:14px;height:14px;border-radius:50%;border:1px solid var(--ink-mute);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .attend-dot::after{content:'';width:7px;height:7px;border-radius:50%;background:transparent;transition:background-color .12s}
+    .attend-opt:has(input:checked) .attend-dot::after{background:var(--accent)}
+    .submit-btn{display:block;width:auto;margin:24px auto 0;padding:13px 40px;border:0;border-radius:999px;background:var(--primary);color:var(--primary-ink);font-family:var(--font-body);letter-spacing:.22em;font-size:calc(var(--type-scale)*14px);cursor:pointer}
+    .success-msg{display:none;text-align:center;padding:18px 6px 0;font-family:var(--font-body);font-style:italic;font-size:calc(var(--type-scale)*18px);color:var(--accent)}
+
+    .wishes{position:relative;padding:40px 24px 58px;text-align:center;background:var(--bg)}
+    .wishes-title{font-family:var(--font-display);font-size:calc(var(--type-scale)*26px);letter-spacing:.18em;color:var(--ink);margin-bottom:12px}
+    .wishes-text{font-family:var(--font-body);font-style:italic;font-size:calc(var(--type-scale)*14px);color:var(--ink-soft);line-height:1.7;max-width:340px;margin:0 auto 18px;white-space:pre-line}
+    .wishes-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;background:var(--primary);color:var(--primary-ink);border:0;font-family:var(--font-body);font-size:calc(var(--type-scale)*13px);letter-spacing:.06em;cursor:pointer}
+    .wish-form{max-width:340px;margin:16px auto 0;text-align:left}
+    .wish-input,.wish-note{display:block;width:100%;margin-bottom:10px;padding:10px 12px;border-radius:8px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;outline:none}
+    .wish-note{min-height:76px;resize:vertical}
+    .wish-submit{display:block;width:100%;padding:12px 22px;border-radius:999px;border:0;background:var(--primary);color:var(--primary-ink);font-family:var(--font-body);font-size:15px;letter-spacing:.06em;cursor:pointer}
+
+    .full-bleed{width:100%;line-height:0;background:var(--bg-alt)}
+    .full-bleed img{width:100%;height:auto;display:block}
+
+    .timing{position:relative;padding:48px 24px 79px;background:var(--bg)}
+    .section-heading{text-align:center;padding:0 24px}
+    .section-title{font-family:var(--font-display);letter-spacing:.32em;font-size:calc(var(--type-scale)*26px);color:var(--ink)}
+    .section-sub{font-family:var(--font-body);font-style:italic;font-size:calc(var(--type-scale)*16px);color:var(--ink-mute);margin-top:8px}
+    .timing-rows{margin-top:22px}
+    .timing-row{display:grid;grid-template-columns:64px 28px 1fr;align-items:center;gap:14px;padding:10px 0;position:relative}
+    .timing-icon{width:64px;height:64px;display:flex;align-items:center;justify-content:center;border:0;background:transparent}
+    .timing-icon img{width:56px;height:56px;object-fit:contain;display:block}
+    .timing-mid{position:relative;height:100%;display:flex;justify-content:center}
+    .timing-mid .line{position:absolute;top:0;bottom:0;width:1px;background:var(--rule)}
+    .timing-mid .heart{position:relative;z-index:1;align-self:center}
+    .timing-mid svg{display:block;fill:var(--accent)}
+    .timing-time{font-family:var(--font-display);font-size:calc(var(--type-scale)*30px);line-height:1;color:var(--ink)}
+    .timing-label{font-family:var(--font-body);font-size:calc(var(--type-scale)*13px);color:var(--ink-mute);margin-top:4px}
+
+    .invite{position:relative;padding:56px 28px 40px;text-align:center;background:var(--bg)}
+    .invite-greeting{font-family:var(--font-display);font-size:calc(var(--type-scale)*30px);color:var(--accent);margin-bottom:24px;white-space:pre-line}
+    .invite-body{font-family:var(--font-body);font-size:calc(var(--type-scale)*14.5px);line-height:1.7;color:var(--ink-soft);max-width:320px;margin:0 auto 28px;white-space:pre-line}
+    .invite-callout{font-family:var(--font-body);font-size:calc(var(--type-scale)*14px);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:12px}
+    .invite-couple{font-family:var(--font-display);font-size:calc(var(--type-scale)*38px);line-height:1.15;color:var(--accent);margin-bottom:14px}
+    .invite-date{font-family:var(--font-display);font-size:calc(var(--type-scale)*29px);color:var(--ink);letter-spacing:.02em;margin-bottom:24px}
+    .cal{display:grid;grid-template-columns:repeat(7,1fr);row-gap:14px;column-gap:6px;font-family:var(--font-body);color:var(--ink-soft)}
+    .cal-wd{font-family:var(--font-mono);font-size:calc(var(--type-scale)*11px);letter-spacing:.18em;text-align:center;color:var(--ink-mute);padding-bottom:8px;border-bottom:1px solid var(--rule)}
+    .cal-day{position:relative;text-align:center;font-size:calc(var(--type-scale)*16px);line-height:32px;font-family:var(--font-display);color:var(--ink-soft)}
+    .cal-day.is-event{color:var(--accent)}
+    .cal-event-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px}
+    .cal-event-wrap svg{position:absolute;inset:0;stroke:var(--accent);fill:none;stroke-width:1.4}
+    .cal-event-wrap span{position:relative}
+    .invite-time{margin-top:32px;font-family:var(--font-display);font-size:calc(var(--type-scale)*28px);color:var(--ink);letter-spacing:.18em}
+
+    .location{position:relative;padding:48px 24px 60px;background:var(--bg)}
+    .loc-addr{margin-top:18px;text-align:center;font-family:var(--font-body);font-size:calc(var(--type-scale)*19px);color:var(--ink-soft);line-height:1.7}
+    .loc-addr .accent-italic{font-style:italic}
+    .map-btn{display:none}
+    .music-btn{display:none}
+    .footer{padding:20px 16px;text-align:center;background:var(--bg);border-top:1px solid var(--rule);font-family:var(--font-body);font-size:13px;letter-spacing:.04em;color:var(--ink-mute);line-height:1.4}
+
+    @media(max-width:360px){:root{--type-scale:1.28}.hero-name{font-size:64px}.hero-names{gap:4px}.timing-row{grid-template-columns:60px 22px 1fr;gap:10px}}
+  </style>
+<link rel="stylesheet" href="app.css">
+<meta name="description" content="Ботаникалық стильдегі үйлену тойына шақыру">
+</head>
+<body data-v3-repair-cross-section-layout>
+  <main class="page">
+    <section class="hero" data-block="hero" data-edit-id="sec-hero" data-edit-container>
+      <img class="hero-image" src="zhapyrak-1.webp" alt="" aria-hidden="true">
+      <div class="hero-overlay">
+        <div class="hero-names" id="heroNames">
+          <div class="hero-name" id="heroName1" data-edit-id="hero-name-1">Ансар</div>
+          <div class="hero-amp" id="heroAmp" data-edit-id="hero-amp">&amp;</div>
+          <div class="hero-name" id="heroName2" data-edit-id="hero-name-2">Аяулым</div>
+        </div>
+        <div class="hero-date" id="heroDate" data-bind="date" data-fmt="DD.MM.YYYY">11.06.2026</div>
+      </div>
+    </section>
+
+    <section class="countdown-section" data-block="countdown" data-edit-id="sec-countdown" data-edit-container>
+      <div class="countdown-title" id="countdownTitle" data-edit-id="countdown-title" data-kk="Тойға дейін:" data-ru="До торжества:">Тойға дейін:</div>
+      <div class="count-grid" aria-live="polite">
+        <div><div class="count-num" id="countDays" data-bind="countdown.days">00</div><div class="count-lbl" id="daysLabel" data-edit-id="label-days" data-kk="күн" data-ru="дней">күн</div></div>
+        <div><div class="count-num" id="countHours" data-bind="countdown.hours">00</div><div class="count-lbl" id="hoursLabel" data-edit-id="label-hours" data-kk="сағат" data-ru="часов">сағат</div></div>
+        <div><div class="count-num" id="countMinutes" data-bind="countdown.minutes">00</div><div class="count-lbl" id="minutesLabel" data-edit-id="label-minutes" data-kk="минут" data-ru="минут">минут</div></div>
+        <div><div class="count-num" id="countSeconds" data-bind="countdown.seconds">00</div><div class="count-lbl" id="secondsLabel" data-edit-id="label-seconds" data-kk="секунд" data-ru="секунд">секунд</div></div>
+      </div>
+      <div class="countdown-note" id="countdownNote" data-edit-id="countdown-note" data-kk="Тойға келуіңізді растауыңызды&#10;сұраймыз!" data-ru="Просим подтвердить ваше присутствие!">Тойға келуіңізді растауыңызды<br>сұраймыз!</div>
+
+      <div class="hosts">
+        <div class="hosts-label" id="hostsLabel" data-edit-id="hosts-label" data-kk="Той иелері:" data-ru="Хозяева торжества:">Той иелері:</div>
+        <div class="hosts-name" id="ownersBigName" data-edit-id="owners-name">Амандос - Айым</div>
+        <div class="hosts-note" id="hostsNote" data-edit-id="hosts-note" data-kk="Сіздерді тойымызда күтеміз!" data-ru="Будем рады видеть вас!">Сіздерді тойымызда күтеміз!</div>
+      </div>
+
+      <div class="rsvp-wrap" data-block="rsvp" data-edit-id="sec-rsvp" data-edit-container>
+        <p class="demo-note">Үлгі: жауаптар тек осы браузерде сақталады, той иелеріне жіберілмейді.</p><form class="rsvp-form" id="rsvpForm">
+          <div class="rsvp-title" id="rsvpTitle" data-edit-id="rsvp-title" data-kk="Анкета" data-ru="Анкета">Анкета</div>
+          <label class="field-label" for="rName" id="nameLabel" data-edit-id="rsvp-name-label" data-kk="Аты-жөніңіз" data-ru="Имя и фамилия">Аты-жөніңіз</label>
+          <input class="rsvp-input" id="rName" name="guest_name" type="text" autocomplete="name" placeholder="Аты-жөніңіз" required>
+          <div class="phone-field">
+            <label class="field-label" for="rPhone" id="phoneLabel" data-edit-id="rsvp-phone-label" data-kk="Телефон нөмірі" data-ru="Номер телефона">Телефон нөмірі</label>
+            <input class="rsvp-input" id="rPhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___ __ __">
+          </div>
+          <div class="attend-label" id="attendanceTitle" data-edit-id="rsvp-attendance-title" data-kk="Келесіз бе?" data-ru="Придёте?">Келесіз бе?</div>
+          <div class="attend-list">
+            <label class="attend-opt"><input type="radio" name="attendance" value="yes" required><span class="attend-dot" aria-hidden="true"></span><span id="attendanceYesText" data-edit-id="rsvp-attendance-yes" data-kk="Иә, әрине" data-ru="Да, конечно">Иә, әрине</span></label>
+            <label class="attend-opt"><input type="radio" name="attendance" value="pair"><span class="attend-dot" aria-hidden="true"></span><span id="attendancePairText" data-edit-id="rsvp-attendance-pair" data-kk="Жұбайыммен келемін" data-ru="Приду с парой">Жұбайыммен келемін</span></label>
+            <label class="attend-opt"><input type="radio" name="attendance" value="no"><span class="attend-dot" aria-hidden="true"></span><span id="attendanceNoText" data-edit-id="rsvp-attendance-no" data-kk="Келе алмаймын" data-ru="Не смогу прийти">Келе алмаймын</span></label>
+          </div>
+          <div class="note-wrap" id="noteWrap">
+            <label class="field-label" for="rNote" id="noteLabel" data-edit-id="rsvp-note-label" data-kk="Тілек қалдырыңыз" data-ru="Оставьте пожелание">Тілек қалдырыңыз</label>
+            <textarea id="rNote" placeholder="Жас жұбайларға тілегіңіз..."></textarea>
+          </div>
+          <input id="rGuests" type="hidden" value="1">
+          <input id="rAttending" type="hidden" value="true">
+          <button class="submit-btn" id="rsvpSubmitBtn" data-edit-id="rsvp-submit" type="submit" data-kk="Жіберу" data-ru="Отправить">Жіберу</button>
+        </form>
+        <div class="success-msg" role="status" id="successMsg" data-edit-id="rsvp-success" data-kk="Рақмет! Жауабыңыз сақталды." data-ru="Спасибо! Ваш ответ сохранён.">Рақмет! Жауабыңыз сақталды.</div>
+      </div>
+    </section>
+
+    <section class="wishes" data-block="wishes" data-edit-id="sec-wishes" data-edit-container>
+      <div class="wishes-title" id="wishesTitle" data-edit-id="wishes-title" data-kk="Тілектер" data-ru="Пожелания">Тілектер</div>
+      <div class="wishes-text" id="wishesText" data-edit-id="wishes-text" data-kk="Жас жұбайларға тілек қалдырыңыз." data-ru="Оставьте пожелание молодожёнам.">Жас жұбайларға тілек қалдырыңыз.</div>
+      <button class="wishes-btn" id="wishesBtn" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+        <span id="wishesBtnLabel" data-edit-id="wishes-btn-label" data-kk="Тілек қалдыру" data-ru="Оставить пожелание">Тілек қалдыру</span>
+      </button>
+      <form class="wish-form" id="wishForm">
+        <input class="wish-input" id="wishName" name="guest_name" maxlength="200" placeholder="Атыңыз" aria-label="Атыңыз" required>
+        <textarea class="wish-note" id="wishMessage" name="message" maxlength="2000" rows="3" placeholder="Тілегіңіз" aria-label="Тілегіңіз" required></textarea>
+        <button class="wish-submit" id="wishSubmitBtn" type="submit" data-kk="Жіберу" data-ru="Отправить">Жіберу</button>
+      </form><p id="wishStatus" class="wish-status" role="status"></p>
+    </section>
+
+    <div class="full-bleed" aria-hidden="true"><img src="zhapyrak-2.webp" alt="" aria-hidden="true" loading="lazy"></div>
+
+    <section class="timing" data-block="program" data-edit-id="sec-program" data-edit-container>
+      <div class="section-heading">
+        <div class="section-title" id="programTitle" data-edit-id="program-title" data-kk="Бағдарлама" data-ru="Программа">Бағдарлама</div>
+        <div class="section-sub" id="programSub" data-edit-id="program-sub" data-kk="Той бағдарламасы" data-ru="Программа торжества">Той бағдарламасы</div>
+      </div>
+      <div class="timing-rows" id="timingRows" data-bind="list" data-list-id="program">
+        <template data-list-item><div class="timing-row"><div class="timing-icon"><img src="guests.webp" alt="" aria-hidden="true"></div><div class="timing-mid"><span class="line"></span><span class="heart"><svg viewBox="0 0 32 28" width="20" height="17.5" aria-hidden="true"><path d="M16 26 C 4 19, 1 11, 6 6 C 11 1, 16 6, 16 9 C 16 6, 21 1, 26 6 C 31 11, 28 19, 16 26 Z"/></svg></span></div><div><div class="timing-time" data-list-slot="time">00:00</div><div class="timing-label" data-list-slot="label">Жаңа кезең</div></div></div></template>
+        <div class="timing-row"><div class="timing-icon"><img src="guests.webp" alt="" aria-hidden="true"></div><div class="timing-mid"><span class="line"></span><span class="heart"><svg viewBox="0 0 32 28" width="20" height="17.5"><path d="M16 26 C 4 19, 1 11, 6 6 C 11 1, 16 6, 16 9 C 16 6, 21 1, 26 6 C 31 11, 28 19, 16 26 Z"/></svg></span></div><div><div class="timing-time" data-edit-id="program-time-1" data-list-slot="time">17:00</div><div class="timing-label" data-edit-id="program-label-1" data-list-slot="label" data-kk="Қонақтарды қарсы алу" data-ru="Встреча гостей">Қонақтарды қарсы алу</div></div></div>
+        <div class="timing-row"><div class="timing-icon"><img src="bride.png" alt="" aria-hidden="true"></div><div class="timing-mid"><span class="line"></span><span class="heart"><svg viewBox="0 0 32 28" width="20" height="17.5"><path d="M16 26 C 4 19, 1 11, 6 6 C 11 1, 16 6, 16 9 C 16 6, 21 1, 26 6 C 31 11, 28 19, 16 26 Z"/></svg></span></div><div><div class="timing-time" data-edit-id="program-time-2" data-list-slot="time">18:00</div><div class="timing-label" data-edit-id="program-label-2" data-list-slot="label" data-kk="Беташар рәсімі" data-ru="Обряд беташар">Беташар рәсімі</div></div></div>
+        <div class="timing-row"><div class="timing-icon"><img src="arch.webp" alt="" aria-hidden="true"></div><div class="timing-mid"><span class="line"></span><span class="heart"><svg viewBox="0 0 32 28" width="20" height="17.5"><path d="M16 26 C 4 19, 1 11, 6 6 C 11 1, 16 6, 16 9 C 16 6, 21 1, 26 6 C 31 11, 28 19, 16 26 Z"/></svg></span></div><div><div class="timing-time" data-edit-id="program-time-3" data-list-slot="time">19:00</div><div class="timing-label" data-edit-id="program-label-3" data-list-slot="label" data-kk="Құдаларды қарсы алу" data-ru="Встреча сватов">Құдаларды қарсы алу</div></div></div>
+        <div class="timing-row"><div class="timing-icon"><img src="celebration.webp" alt="" aria-hidden="true"></div><div class="timing-mid"><span class="line"></span><span class="heart"><svg viewBox="0 0 32 28" width="20" height="17.5"><path d="M16 26 C 4 19, 1 11, 6 6 C 11 1, 16 6, 16 9 C 16 6, 21 1, 26 6 C 31 11, 28 19, 16 26 Z"/></svg></span></div><div><div class="timing-time" data-edit-id="program-time-4" data-list-slot="time">20:00</div><div class="timing-label" data-edit-id="program-label-4" data-list-slot="label" data-kk="Той салтанаты" data-ru="Торжество">Той салтанаты</div></div></div>
+        <div class="timing-row"><div class="timing-icon"><img src="wedding-cake.svg" alt="" aria-hidden="true"></div><div class="timing-mid"><span class="line"></span><span class="heart"><svg viewBox="0 0 32 28" width="20" height="17.5"><path d="M16 26 C 4 19, 1 11, 6 6 C 11 1, 16 6, 16 9 C 16 6, 21 1, 26 6 C 31 11, 28 19, 16 26 Z"/></svg></span></div><div><div class="timing-time" data-edit-id="program-time-5" data-list-slot="time">22:00</div><div class="timing-label" data-edit-id="program-label-5" data-list-slot="label" data-kk="Тойдың торты" data-ru="Свадебный торт">Тойдың торты</div></div></div>
+      </div>
+    </section>
+
+    <div class="full-bleed" aria-hidden="true"><img src="zhapyrak-3.webp" alt="" aria-hidden="true" loading="lazy"></div>
+
+    <section class="invite" data-block="invite" data-edit-id="sec-invite" data-edit-container>
+      <div class="invite-greeting" id="inviteGreeting" data-edit-id="invite-greeting" data-kk="Құрметті" data-ru="Дорогие гости">Құрметті</div>
+      <div class="invite-body" id="inviteIntro" data-edit-id="invite-intro" data-kk="Ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран, көршілер мен әріптестер!" data-ru="Родные, близкие, друзья, соседи и коллеги!">Ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран, көршілер мен әріптестер!</div>
+      <div class="invite-callout" id="inviteCallout" data-edit-id="invite-callout" data-kk="СІЗДЕРДІ" data-ru="ПРИГЛАШАЕМ ВАС">СІЗДЕРДІ</div>
+      <div class="invite-couple"><span data-edit-id="invite-name-1">Ансар</span> <span id="inviteConnector" data-edit-id="invite-connector" data-kk="пен" data-ru="и">пен</span> <span data-edit-id="invite-name-2">Аяулым</span></div>
+      <div class="invite-body" id="inviteBody" data-edit-id="invite-body" data-kk="Үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!" data-ru="Приглашаем вас стать почётными гостями нашего свадебного торжества!">Үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</div>
+      <div class="invite-date" id="inviteBigDate" data-bind="date" data-fmt="D MMMM YYYY">11 Маусым 2026</div>
+      <div class="cal" id="calendar" aria-hidden="true" data-bind="calendar"><template data-cal-weekday><div class="cal-wd" data-cal-num></div></template><template data-cal-day><div class="cal-day" data-cal-num></div></template><template data-cal-event><div class="cal-day is-event"><span class="cal-event-wrap"><svg viewBox="0 0 36 32" width="36" height="32"><path d="M18 30 C 4 22, 2 12, 8 7 C 13 3, 18 8, 18 11 C 18 8, 23 3, 28 7 C 34 12, 32 22, 18 30 Z"/></svg><span data-cal-num></span></span></div></template></div>
+      <div class="invite-time"><span id="timePrefix" data-edit-id="time-prefix" data-kk="Сағат" data-ru="Время">Сағат</span> <span id="eventTimeMirror" data-bind="date" data-fmt="HH:mm">18:00</span></div>
+    </section>
+
+    <section class="location" data-block="location" data-edit-id="sec-location" data-edit-container>
+      <div class="section-heading">
+        <div class="section-title" id="locationTitle" data-edit-id="location-title" data-kk="Мекен-жай" data-ru="Адрес">Мекен-жай</div>
+        <div class="section-sub" id="locationSub" data-edit-id="location-sub" data-kk="Той орны" data-ru="Место проведения">Той орны</div>
+      </div>
+      <div class="loc-addr" id="locationAddress" data-edit-id="location-address">
+        <div>Құлсары қаласы</div><div>Сырым Датов, 57</div><div class="accent-italic">«Grand Hall»</div>
+      </div>
+      <a class="map-btn" id="mapBtn" href="https://go.2gis.com/" target="_blank" rel="noopener noreferrer" data-bind="map"><span id="mapBtnLabel" data-edit-id="map-label" data-kk="Картадан ашу" data-ru="Открыть карту">Картадан ашу</span></a>
+    </section>
+
+    <footer class="footer"><span id="footerText" data-edit-id="footer-text" data-kk="Тойға шақыру · Үлгі" data-ru="Свадебное приглашение · Образец">Тойға шақыру · Үлгі</span></footer>
+    <button class="music-btn" id="musicBtn" type="button" aria-label="Music"></button>
+    <audio id="audioEl" preload="none" data-bind="music"></audio>
+  </main>
+<script src="app.js"></script></body>
+</html>
